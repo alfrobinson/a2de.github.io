@@ -1,8 +1,8 @@
 
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <title>a2de</title>
     <meta name="description" content="¿cuál descripción?">
 
@@ -10,9 +10,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="favicon.ico">
-
-    <link rel="stylesheet" type="text/css" href="assets/dist/css/application.css?v=0e6dc86a35">
-
+    <link rel="stylesheet" type="text/css" href="assets/css/screen.css?v=0e6dc86a35">
+    <!-- <link rel="stylesheet" type="text/css" href="//fonts.useso.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" /> -->
+    <link rel="stylesheet" type="text/css" href="assets/plugins/font-awesome-4.5.0/css/font-awesome.min.css?v=0e6dc86a35">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap-3.3.5/css/bootstrap.min.css?v=0e6dc86a35">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/highlight-9.1.0/styles/monokai-sublime.css?v=0e6dc86a35">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/anijs-0.9.3/anicollection.min.css?v=0e6dc86a35">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/fancybox-2.1.5/jquery.fancybox.css?v=0e6dc86a35">
     <link rel="canonical" href="http://a2de.net/">
     <meta name="referrer" content="no-referrer-when-downgrade">
     
@@ -47,51 +51,180 @@
     <meta name="generator" content="Ghost 0.11">
     <link rel="alternate" type="application/rss+xml" title="a2de" href="http://a2de.net/rss/">
 </head>
-<body class="home-template">
-    <div id="wrap">
-        <div id="navbar" class="left">
-          <nav class="nav">
-  <div class="logo"><a href="http://a2de.net" style="background: url(content/images/2016/10/hjCppl9.jpg) 0 0 / 100% auto no-repeat;"><span>a2de</span></a></div>
-  <ul class="main-nav">
-  </ul>
-  <div class="info">
-            <a href="http://a2de.net/" class="info-about">关于</a>
-    <a href="http://a2de.net" title="知识共享署名-非商业性使用-禁止演绎 2.5 中国大陆许可协议" class="info-right">Copyright © 2016</a>
-  </div>
-</nav>
 
+<body class="home-template nav-closed" data-spy="scroll" data-target="#tocScrollspy">
+
+    <div class="site-wrapper">
+
+        
+<!-- <header class="main-header no-cover"> -->
+<header class="main-header">
+    <nav class="container main-nav clearfix">
+        <div class="main-nav-title pull-left">
+            <a class="blog-title" href="http://a2de.net">a2de</a>
         </div>
-        <div id="main-content" class="right">
-            <header class="main-header">
-  <h1>
-    <a href="http://a2de.net">a2de</a>
-  </h1>
+            <div class="nav pull-right">
+    <ul>
+            <li class="nav-home nav-current" role="presentation"><a href="http://a2de.net/">Home</a></li>
+    </ul>
+</div>
+
+    </nav>
 </header>
 
-<main id="content" class="content">
-    <article class="post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="lorem/">Lorem</a></h2>
-        <section class="post-meta">
-            <time class="post-date" datetime="2016-10-16">2016-10-16</time>
-        </section>
-    </header>
-    <section class="post-excerpt">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud</p>
-        <p><a class="read-more" href="lorem/">Read Me</a></p>
-    </section>
-</article>
+<main id="container" class="container" role="main">
 
-<nav class="pagination" role="navigation">
+    <div id="content" class="content col-sm-12 col-md-8 col-lg-8">
+    <article class="post" data-anijs="if: scroll, on: window, do: fadeInDown animated, before: scrollReveal">
+        <header class="post-header">
+            <h1 class="post-title"><a href="lorem/">Lorem</a></h1>
+        </header>
+        <section class="post-excerpt">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud ... </p>
+        </section>
+        <footer class="post-meta">
+            <!--  -->
+            <!--  -->
+            <span class="post-meta-item post-meta-author">
+                <i class="fa fa-user"></i>
+                <a href="author/aaron/">Aaron</a>
+            </span>
+            <span class="post-meta-item post-meta-date">
+                <i class="fa fa-clock-o"></i>
+                <time class="post-date" datetime="2016-10-16">2 minutes ago</time>
+                <time class="post-date" datetime="2016-10-16">(2016-10-16)</time>
+            </span>
+            <span class="post-meta-item post-meta-tags">
+                <i class="fa fa-tag"></i>
+                
+            </span>
+            <span class="post-meta-item pull-right">
+                <a class="read-more" href="lorem/">阅读全文 <i class="fa fa-angle-double-right"></i></a>
+            </span>
+        </footer>
+    </article>
+
+    <nav class="pagination" role="navigation">
+    <span class="page-number">Page 1 of 1</span>
 </nav>
+
+</div>
+
+    <div id="sidebar" class="sidebar col-md-4 col-lg-4">
+        <div class="widget widget-profile">
+    <div class="widget-profile-cover overlay no-cover"></div>
+    <div class="widget-profile-header">
+        <a class="widget-profile-logo" href="http://a2de.net">
+                <img src="content/images/2016/10/hjCppl9.jpg" alt="a2de">
+        </a>
+    </div>
+    <span class="widget-profile-title label label-xlg label-minty arrowed-in arrowed-in-right">a2de</span>
+    <hr>
+    <p class="widget-profile-desc">
+            ¿cuál descripción?
+    </p>
+    <hr> <nav class="navigation site-stat">
+    <div class="site-stat-item">
+        <span class="site-stat-item-count">
+<script>console.error("The {{get}} helper is not available. Public API access must be enabled if you wish to use the {{get}} helper. See http://support.ghost.org/public-api-beta");</script>        </span>
+        <span class="site-stat-item-name">文章</span>
+    </div>
+    <div class="site-stat-item">
+        <span class="site-stat-item-count">
+<script>console.error("The {{get}} helper is not available. Public API access must be enabled if you wish to use the {{get}} helper. See http://support.ghost.org/public-api-beta");</script>        </span>
+        <span class="site-stat-item-name">推荐</span>
+    </div>
+    <div class="site-stat-item">
+        <span class="site-stat-item-count">
+<script>console.error("The {{get}} helper is not available. Public API access must be enabled if you wish to use the {{get}} helper. See http://support.ghost.org/public-api-beta");</script>        </span>
+        <span class="site-stat-item-name">标签</span>
+    </div>
+</nav>
+
+    <hr> <nav class="navigation social">
+    <ul class="social">
+        <li>
+            <a href="http://weibo.com/17064042" class="social-weibo">
+                <i class="fa fa-xlg fa-weibo" data-original-title="新浪微博" data-rel="tooltip"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/xiaoluoboding" class="social-github">
+                <i class="fa fa-xlg fa-github" data-original-title="GitHub主页" data-rel="tooltip"></i>
+            </a>
+        </li>
+        <li>
+            <a href="http://music.163.com/#/user/home?id=18953599" class="social-music">
+                <i class="fa fa-xlg fa-music" data-original-title="网易云音乐" data-rel="tooltip"></i>
+            </a>
+        </li>
+        <li>
+            <a href="mailto:xiaoluoboding@gmail.com" class="social-mail">
+                <i class="fa fa-xlg fa-envelope-o" data-original-title="私信博主" data-rel="tooltip"></i>
+            </a>
+        </li>
+        <li>
+            <a href="rss/index.rss" class="social-rss">
+                <i class="fa fa-xlg fa-rss" data-original-title="订阅本站" data-rel="tooltip"></i>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+</div>
+
+
+
+    <div class="widget widget-tag-cloud">
+	<div class="widget-title">
+		<div class="widget-title-meta">
+			<i class="fa fa-tags"></i> 
+			<span class="title-meta-word">标签云</span>
+		</div>
+	</div>
+	<div class="tag-cloud-content">
+		<!--  -->
+<script>console.error("The {{get}} helper is not available. Public API access must be enabled if you wish to use the {{get}} helper. See http://support.ghost.org/public-api-beta");</script>	</div>
+</div>
+
+</div>
 
 </main>
 
-            <a href="javascript:;" class="drawer-toggle"></a>
-        </div>
+
+        <footer class="site-footer clearfix">
+            <div class="footer-meta container">
+                <section class="copyright"><a href="http://a2de.net">a2de</a> © 2016</section>
+                <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a>, Theme <a href="https://github.com/xiaoluoboding/kaldorei">Kaldorei</a></section>
+            </div>
+        </footer>
+
     </div>
 
-    <script src="assets/dist/js/application.js?v=0e6dc86a35"></script>
+    <div id="backTop" class="backTop">
+        <button class="btn btn-inverse">
+            <i class="fa fa-chevron-up"></i>
+        </button>
+    </div>
 
+    <script type="text/javascript" src="assets/js/jquery-1.12.0.min.js?v=0e6dc86a35"></script>
     
+
+    <script type="text/javascript" src="assets/js/jquery.fitvids.js?v=0e6dc86a35"></script>
+    <script type="text/javascript" src="assets/js/index.js?v=0e6dc86a35"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap-3.3.5/js/bootstrap.min.js?v=0e6dc86a35"></script>
+    <script type="text/javascript" src="assets/plugins/highlight-9.1.0/highlight.pack.js?v=0e6dc86a35"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-toc-0.3.5/jquery.toc.js?v=0e6dc86a35"></script>
+    <script type="text/javascript" src="assets/plugins/velocity-1.2.3/velocity.min.js?v=0e6dc86a35"></script>
+    <script type="text/javascript" src="assets/plugins/velocity-1.2.3/velocity.ui.min.js?v=0e6dc86a35"></script>
+    <script type="text/javascript" src="assets/plugins/anijs-0.9.3/anijs-min.js?v=0e6dc86a35"></script>
+    <script type="text/javascript" src="assets/plugins/anijs-0.9.3/anijs-helper-scrollreveal-min.js?v=0e6dc86a35"></script>
+    <script type="text/javascript" src="assets/plugins/github-repo-jquery-widget/jquery.githubRepoWidget.min.js?v=0e6dc86a35"></script>
+    <script type="text/javascript" src="assets/plugins/fancybox-2.1.5/jquery.fancybox.pack.js?v=0e6dc86a35"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            
+        });
+    </script>
 </body>
+
